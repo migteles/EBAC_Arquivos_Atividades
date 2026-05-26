@@ -12,9 +12,9 @@ Para finalizar minha compra
      E algum campo marcado com asteristico não esteja preenchido
      Então deve exibir a mensagem de alerta "Por favor, preencha todos os campos obrigatórios"
     
-    Cenário: Email inválido
+    Esquema do Cenário: Email inválido
      Quando eu clicar na opção Finalizar Compra
-     E o <email> esteja em um formato inválido
+     E o endereço de <email> esteja em um formato inválido
      Então deve aparecer a mensagem de alerta "Por favor, insira um endereço de e-mail válido"
 
      Exemplos:
@@ -25,7 +25,7 @@ Para finalizar minha compra
      | @icloud.com  |
      | @outlook.com |
 
-    Cenário: Confirmar Checkout
+    Esquema do Cenário: Confirmar Checkout
      Quando eu clicar na opção Finalizar Compra
      E todos os <campos> marcados com asteristicos estejam preenchidos
      Então deve ser finalizado o cadastro e a compra seja confirmada 
